@@ -7,6 +7,10 @@ $(call inherit-product, device/samsung/jfltetmo/full_jfltetmo.mk)
 # Release Name
 PRODUCT_RELEASE_NAME := jfltetmo
 
+# Bootanimation
+PRODUCT_COPY_FILES += \
+    device/samsung/jfltetmo/bootanimation.zip:system/media/bootanimation.zip
+
 # Device overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=jfltetmo \
